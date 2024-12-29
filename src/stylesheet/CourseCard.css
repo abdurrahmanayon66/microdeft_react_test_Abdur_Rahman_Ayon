@@ -1,0 +1,109 @@
+.course-card {
+  max-width: 20rem;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+}
+
+.course-content {
+  padding: 1rem;
+}
+
+.course-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.course-card:hover .course-title {
+  color: #5a67d8;
+}
+
+.course-description {
+  font-size: 0.875rem;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.instructor-info {
+  display: flex;
+  align-items: center;
+  color: #718096;
+}
+
+.instructor-icon {
+  margin-right: 0.5rem;
+  color: #5a67d8;
+}
+
+.instructor-name {
+  font-weight: 500;
+}
+
+.button-container {
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.view-detail-button {
+  width: 100%;
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 0.75rem;
+  background-color: #5a67d8;
+  color: white;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.view-detail-button:hover {
+  background-color: #4c51bf;
+  transform: translateY(-3px);
+}
+
+.view-detail-button:active {
+  transform: translateY(0);
+}
+
+.view-detail-button:focus {
+  outline: 2px solid #805ad5;
+}
